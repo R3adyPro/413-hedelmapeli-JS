@@ -1,0 +1,137 @@
+body{
+    
+}
+table.table1, th, td{
+    border: 2px solid ;
+}
+table.table1 {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+table.table2, th, td{
+    border: 0px hidden;
+}
+table.table2{
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: 60px;
+    border-collapse: collapse;
+}
+
+
+
+
+h1{
+    font-family: Tahoma;
+    text-align: center;
+}
+h3{
+    font-family: Tahoma;
+}
+p{  
+    font-family: Tahoma;
+}
+#yks{
+    position: absolute;
+    top: 250px;
+    right: 1750px;
+    left: auto;
+    
+}
+#kaks{
+    position: absolute;
+    top: 250px;
+    right: 1750px;
+    left: auto;
+    
+}
+#kolme{
+    position: absolute;
+    top: 250px;
+    right: 1750px;
+    left: auto;
+    
+}
+#rahat{
+    position: absolute;
+    top: 250px;
+    right: 1750px;
+    left: auto;
+    
+}
+#panos{
+    position: absolute;
+    top: 250px;
+    right: 1750px;
+    left: auto;
+    
+}
+
+
+
+
+
+img[src*="apple.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="berry.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="kolikko.png"]{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img[src*="kolikko2.png"]{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img[src*="kolikko3.png"]{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img[src*="lukko.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="seven.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="melon.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="pear.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="mansikat.png"]{
+
+}
+img[src*="melonit.png"]{
+
+}
+img[src*="omenat.png"]{
+
+}
+img[src*="paarynat.png"]{
+
+}
+img[src*="seiskat.png"]{
+
+}
+img[src*="pelaa.png"]{
+    position:absolute;
+    left: auto;
+    right: 30px;
+}
