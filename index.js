@@ -1,8 +1,6 @@
 
 var rahat = 50;
-var panos1 = 1;
-var panos2 = 2;
-var panos3 = 3;
+var panos = 1;
 var Arvot = [];
 
 var vOmenat = 2;
@@ -12,25 +10,60 @@ var vMansikka = 8;
 var vSeiska = 10;
 
 
+var cancel = setInterval(Päivitettävät, 10);
+
 function Pelaa(){
-    Randomnumero();
-    console.log(Arvot);
-    const empty = arr => arr.length = 0;
-    
-    Kuvanvaihto();
-    empty(Arvot)
+    if((rahat - panos) > -1){
+        Randomnumero();
+        const empty = arr => arr.length = 0;
+        KuvanVaihto();
+        empty(Arvot)
+        Rahanvähennys();
+    }
 }
 
+function Päivitettävät(){
+    document.getElementById('rahat').innerHTML = 'RAHAA ' + rahat + '€';
+    document.getElementById('panos').innerHTML = 'PANOS ' + panos + '€';
+}
 
+function Rahanvähennys(){
+    rahat = rahat - panos;
+}
 
-
-
-function Panos(){
+//Panoksen valinta
+function Panos1(){
+    if(panos == 2){
+        panos = panos - 1;
+    }
+    else if(panos == 3){
+        panos = panos - 2;
+    }
     
 }
 
+function Panos2(){
+    if(panos == 1){
+        panos = panos + 1;
+    }
+    else if(panos == 3){
+        panos = panos - 1;
+    }
+}
+
+function Panos3(){
+    if(panos == 2){
+        panos = panos + 1;
+    }
+    else if(panos == 1){
+        panos = panos + 2;
+    }
+}
+
+//Kuvakkeiden arvonta, vaihto ja lukitus
 function Randomnumero(){
     var random = Math.random() * 100;
+    
     for(i = 0; i < 4; i++){
         if(random < 13){
             Arvot.push(1);
@@ -59,72 +92,33 @@ function Lukittu(){
 
 }
 
-function Kuvanvaihto(){
-    var yks = 'kuvat/apple.png'
-    var kaks = 'kuvat/pear.png'
-    var kolme = 'kuvat/melon.png'
-    var nelja = 'kuvat/berry.png'
-    var viis = 'kuvat/seven.png'
+function KuvanVaihto(){
+    var k1 = 'kuvat/apple.png'
+    var k2 = 'kuvat/pear.png'
+    var k3 = 'kuvat/melon.png'
+    var k4 = 'kuvat/berry.png'
+    var k5 = 'kuvat/seven.png'
 
-    const indexyks = Arvot.indexOf(1);
-    const indexkaks = Arvot.indexOf(2);
-    const indexkolme = Arvot.indexOf(3);
-    const indexnelja = Arvot.indexOf(4);
-    const indexviisi = Arvot.indexOf(5);
-    console.log(indexyks, indexkaks, indexkolme)
+    var random = Math.random() * 100;
 
-    for(i = 0; i<4; i++){
-        var rulla = "rulla" + (i+1);
-        console.log(indexkaks)
-        if(indexkaks == -1){
-            console.log("testi")
-            for(i = 0; i<4; i++){
-                console.log("testi2")
-                var valittu = Arvot[0];
-                if(indexyks == valittu){
-                    document.getElementById(rulla).src = yks;
-                }
-                else if(indexkaks == valittu){
-                    document.getElementById(rulla).src = kaks;
-                }
-                else if(indexkolme == valittu){
-                    document.getElementById(rulla).src = kolme;
-                }
-                else if(indexnelja == valittu){
-                    document.getElementById(rulla).src = nelja;
-                }
-                else{
-                    document.getElementById(rulla).src = viis;
-                }
-            }
+    o = -1;
+
+    for(i=0; i<4; i++){
+
+        o = o + 1;
+        const arvo = Arvot[o];
+
+        if(o == 1){
+            document.getElementById("rulla1").src = "kuvat/k" + arvo + ".png";
         }
-        
-        else if(indexyks == i){
-            document.getElementById(rulla).src = yks;
+        else if(o == 2){
+            document.getElementById("rulla2").src = "kuvat/k" + arvo + ".png";
         }
-        else if(indexkaks == i){
-            document.getElementById(rulla).src = kaks;
-        }
-        else if(indexkolme == i){
-            document.getElementById(rulla).src = kolme;
-        }
-        else if(indexnelja == i){
-            document.getElementById(rulla).src = nelja;
+        else if(o == 3){
+            document.getElementById("rulla3").src = "kuvat/k" + arvo + ".png";
         }
         else{
-            document.getElementById(rulla).src = viis;
+            document.getElementById("rulla4").src = "kuvat/k" + arvo + ".png";
         }
     }
-        
-    
-
-    
-    
-    
-
-    document.getElementById('rulla2');
-    document.getElementById('rulla3');  
-    document.getElementById('rulla4');
 }
-    
-    

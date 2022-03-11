@@ -22,8 +22,21 @@ table {
 }
 .row{
     position: absolute;
-    top: 600px;
-    left: 120px;
+    top: 560px;
+    left: 130px;
+}
+.row2 > .column2{
+    padding: 0 40px;
+
+}
+.column2{
+    float: left;
+    width: 10%;
+}
+.row2{
+    position: absolute;
+    top: 340px;
+    left: 345px;
 }
 
 
@@ -61,16 +74,16 @@ p{
     
 }
 #rahat{
-    position: absolute;
-    top: 250px;
-    right: 1750px;
+    position: fixed;
+    top: 200px;
+    right: 1252px;
     left: auto;
     
 }
 #panos{
     position: absolute;
     top: 250px;
-    right: 1750px;
+    right: 1260px;
     left: auto;
     
 }
@@ -79,11 +92,11 @@ p{
 
 
 
-img[src*="apple.png"]{
+img[src*="k1.png"]{
     height: 100px;
     width: 100px;
 }
-img[src*="berry.png"]{
+img[src*="k4.png"]{
     height: 100px;
     width: 100px;
 }
@@ -93,42 +106,33 @@ img[src*="kolikko.png"]{
     margin-left: 10px;
     margin-right: 10px;
 }
-img[src*="kolikko2.png"]{
-    height: 100px;
-    width: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-img[src*="kolikko3.png"]{
-    height: 100px;
-    width: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 img[src*="lukko.png"]{
     height: 100px;
     width: 100px;
 }
-img[src*="seven.png"]{
+img[src*="k5.png"]{
     height: 100px;
     width: 100px;
 }
-img[src*="melon.png"]{
+img[src*="k3.png"]{
     height: 100px;
     width: 100px;
 }
-img[src*="pear.png"]{
+img[src*="k2.png"]{
     height: 100px;
     width: 100px;
 }
-img[src*="mansikat.png"]{
-
+img[src*="1€.png"]{
+    height: 150px;
+    width: 150px;
 }
-img[src*="melonit.png"]{
-
+img[src*="2€.png"]{
+    height: 150px;
+    width: 150px;
 }
-img[src*="omenat.png"]{
-
+img[src*="3€.png"]{
+    height: 150px;
+    width: 150px;
 }
 img[src*="paarynat.png"]{
 
