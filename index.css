@@ -1,6 +1,4 @@
-body{
-    
-}
+
 table.table, th, td{
     border: 0px solid ;
     font-size: 80px;
@@ -22,8 +20,8 @@ table {
 }
 .row{
     position: absolute;
-    top: 560px;
-    left: 130px;
+    top: 54%;
+    left: 10.5%;
 }
 .row2 > .column2{
     padding: 0 40px;
@@ -35,8 +33,21 @@ table {
 }
 .row2{
     position: absolute;
-    top: 340px;
-    left: 345px;
+    top: 31%;
+    left: 20%;
+}
+.row3 > .column3{
+    padding: 0 69px;
+
+}
+.column3{
+    float: left;
+    width: 10%;
+}
+.row3{
+    position: absolute;
+    top: 68%;
+    left: 10%;
 }
 
 
@@ -75,18 +86,59 @@ p{
 }
 #rahat{
     position: fixed;
-    top: 200px;
-    right: 1252px;
+    top: 20%;
+    right: 65%;
     left: auto;
     
 }
 #panos{
-    position: absolute;
-    top: 250px;
-    right: 1260px;
+    position: fixed;
+    top: 23%;
+    right: 65.4%;
     left: auto;
     
 }
+#voitto{
+    position: fixed;
+    top: 17%;
+    right: 46%;
+    left: auto;
+    font-size: 40px;
+    color:green;
+}
+#valittu{
+    position: fixed;
+    top: 75%;
+    right: 83.8%;
+    left: auto;
+    font-size: 30px;
+    color:green;
+}
+#valittu1{
+    position: fixed;
+    top: 75%;
+    right: 72.7%;
+    left: auto;
+    font-size: 30px;
+    color:green;
+}
+#valittu2{
+    position: fixed;
+    top: 75%;
+    right: 61.5%;
+    left: auto;
+    font-size: 30px;
+    color:green;
+}
+#valittu3{
+    position: fixed;
+    top: 75%;
+    right: 50.5%;
+    left: auto;
+    font-size: 30px;
+    color:green;
+}
+
 
 
 
@@ -107,8 +159,8 @@ img[src*="kolikko.png"]{
     margin-right: 10px;
 }
 img[src*="lukko.png"]{
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
 }
 img[src*="k5.png"]{
     height: 100px;
@@ -134,15 +186,9 @@ img[src*="3€.png"]{
     height: 150px;
     width: 150px;
 }
-img[src*="paarynat.png"]{
-
-}
-img[src*="seiskat.png"]{
-
-}
 img[src*="pelaa.png"]{
     position:absolute;
     left: auto;
-    right: 70px;
+    right: 6%;
 }
 
