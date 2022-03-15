@@ -1,0 +1,194 @@
+
+table.table, th, td{
+    border: 0px solid ;
+    font-size: 80px;
+}
+table {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    width: auto;
+}
+.row > .column{
+    padding: 0 70px;
+
+}
+.column{
+    float: left;
+    width: 10%;
+}
+.row{
+    position: absolute;
+    top: 54%;
+    left: 10.5%;
+}
+.row2 > .column2{
+    padding: 0 40px;
+
+}
+.column2{
+    float: left;
+    width: 10%;
+}
+.row2{
+    position: absolute;
+    top: 31%;
+    left: 20%;
+}
+.row3 > .column3{
+    padding: 0 69px;
+
+}
+.column3{
+    float: left;
+    width: 10%;
+}
+.row3{
+    position: absolute;
+    top: 68%;
+    left: 10%;
+}
+
+
+
+
+h1{
+    font-family: Tahoma;
+    text-align: center;
+}
+h3{
+    font-family: Tahoma;
+}
+p{  
+    font-family: Tahoma;
+}
+#yks{
+    position: absolute;
+    top: 250px;
+    right: 1750px;
+    left: auto;
+    
+}
+#kaks{
+    position: absolute;
+    top: 250px;
+    right: 1750px;
+    left: auto;
+    
+}
+#kolme{
+    position: absolute;
+    top: 250px;
+    right: 1750px;
+    left: auto;
+    
+}
+#rahat{
+    position: fixed;
+    top: 20%;
+    right: 65%;
+    left: auto;
+    
+}
+#panos{
+    position: fixed;
+    top: 23%;
+    right: 65.4%;
+    left: auto;
+    
+}
+#voitto{
+    position: fixed;
+    top: 17%;
+    right: 46%;
+    left: auto;
+    font-size: 40px;
+    color:green;
+}
+#valittu{
+    position: fixed;
+    top: 75%;
+    right: 83.8%;
+    left: auto;
+    font-size: 30px;
+    color:green;
+}
+#valittu1{
+    position: fixed;
+    top: 75%;
+    right: 72.7%;
+    left: auto;
+    font-size: 30px;
+    color:green;
+}
+#valittu2{
+    position: fixed;
+    top: 75%;
+    right: 61.5%;
+    left: auto;
+    font-size: 30px;
+    color:green;
+}
+#valittu3{
+    position: fixed;
+    top: 75%;
+    right: 50.5%;
+    left: auto;
+    font-size: 30px;
+    color:green;
+}
+
+
+
+
+
+
+img[src*="k1.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="k4.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="kolikko.png"]{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img[src*="lukko.png"]{
+    height: 110px;
+    width: 110px;
+}
+img[src*="k5.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="k3.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="k2.png"]{
+    height: 100px;
+    width: 100px;
+}
+img[src*="1€.png"]{
+    height: 150px;
+    width: 150px;
+}
+img[src*="2€.png"]{
+    height: 150px;
+    width: 150px;
+}
+img[src*="3€.png"]{
+    height: 150px;
+    width: 150px;
+}
+img[src*="pelaa.png"]{
+    position:absolute;
+    left: auto;
+    right: 6%;
+}
+

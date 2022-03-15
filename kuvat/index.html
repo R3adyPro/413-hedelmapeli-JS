@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEDELMÄPELI</h1>
+    <h3 id="rahat"></h3>
+    <h3 id="panos"></h3>
+    <h3 id="voitto"></h3>
+    <p id="valittu"></p>
+    <p id="valittu1"></p>
+    <p id="valittu2"></p>
+    <p id="valittu3"></p>
+
+
+    <!--voitot-->
+    <table >
+        <tr>
+            <th><img id="omenat" src="kuvat/omenat.png"></th>
+            <th>3</th>
+            <th><img src="kuvat/kolikko.png" id="hinta"></th>
+        </tr>
+        <tr>
+            <th><img id="paarynat" src="kuvat/paarynat.png"></th>
+            <th>4</th>
+            <th><img src="kuvat/kolikko.png" id="hinta"></th>
+        </tr>
+        <tr>
+            <th><img id="melonit" src="kuvat/melonit.png"></th>
+            <th>5</th>
+            <th><img src="kuvat/kolikko.png" id="hinta"></th>
+        </tr>
+        <tr>
+            <th><img id="mansikat" src="kuvat/mansikat.png"></th>
+            <th>6</th>
+            <th><img src="kuvat/kolikko.png" id="hinta"></th>
+        </tr>
+        <tr>
+            <th><img id="seiskat" src="kuvat/seiskat.png"></th>
+            <th>10</th>
+            <th><img src="kuvat/kolikko.png" id="hinta"></th>
+        </tr>
+    </table>
+    <!--Rullat-->
+    <div class="row">
+        <div class="column">
+            <img src="kuvat/k5.png" id="rulla1">
+        </div>
+        <div class="column">
+            <img src="kuvat/k5.png" id="rulla2">
+        </div>
+        <div class="column">
+            <img src="kuvat/k5.png" id="rulla3">
+        </div>
+        <div class="column">
+            <img src="kuvat/k5.png" id="rulla4">
+        </div>
+    </div>
+    <!--Panos-->
+    <div class="row2">
+        <div class="column2">
+            <img src="kuvat/1€.png" id="1€" onclick="Panos1()">
+        </div>
+        <div class="column2">
+            <img src="kuvat/2€.png" id="2€" onclick="Panos2()">
+        </div>
+        <div class="column2">
+            <img src="kuvat/3€.png" id="3€" onclick="Panos3()">
+        </div>
+    </div>
+    <!--Lukitus-->
+    <div class="row3">
+        <div class="column3">
+            <img src="kuvat/lukko.png" id="lukko1" onclick="Lukko1()">
+        </div>
+        <div class="column3">
+            <img src="kuvat/lukko.png" id="lukko2" onclick="Lukko2()">
+        </div>
+        <div class="column3">
+            <img src="kuvat/lukko.png" id="lukko3" onclick="Lukko3()">
+        </div>
+        <div class="column3">
+            <img src="kuvat/lukko.png" id="lukko4" onclick="Lukko4()">
+        </div>
+    </div>
+
+
+
+    
+    
+
+
+    <img id="pelaa" src="kuvat/pelaa.png" onclick="Pelaa()">
+
+
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
