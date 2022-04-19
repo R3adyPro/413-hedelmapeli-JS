@@ -14,19 +14,24 @@ var kolme = 0;
 var nelja = 0;
 
 var Lukittu = 0;
+var varmistus = 0;
 
 var cancel = setInterval(Päivitettävät, 10);
 
 const empty = arr => arr.length = 0;
 
 function Pelaa(){
-    if(Lukittu == 1){
+    if(Lukittu == 1 && varmistus == 0){
         Arvojenvaihtaminen();
         KuvanVaihtoLukitus();
         Voitot();
         empty(Arvot);
         Pois2();
         setTimeout(function(){ Pois(); }, 5000);
+    }
+    else if(varmistus == 1){
+        alert('Et voi lukita samoja kahdesti')
+        Lukitustentarkastus()
     }
     else if((rahat - panos) > -1){
         Randomnumero();
@@ -35,6 +40,8 @@ function Pelaa(){
         empty(Arvot);
         Rahanvähennys();
         setTimeout(function(){ Pois(); }, 5000);
+        varmistus = 0;
+        console.log(panos)
     }
 }
 
@@ -99,17 +106,17 @@ function Voitot(){
             if(arvot2 == 1){
                 Montako = Montako + 1;
                 if(Montako == 4){
-                    if(panos = 1){
+                    if(panos == 1){
                         rahat = rahat + 3;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 3 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 2){
+                    else if(panos == 2){
                         rahat = rahat + 6;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 6 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 3){
+                    else if(panos == 3){
                         rahat = rahat + 9;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 9 + '€';
                         empty(Montako);
@@ -124,17 +131,17 @@ function Voitot(){
             if(arvot2 == 2){
                 Montako = Montako + 1;
                 if(Montako == 4){
-                    if(panos = 1){
+                    if(panos == 1){
                         rahat = rahat + 4;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 4 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 2){
+                    else if(panos == 2){
                         rahat = rahat + 8;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 8 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 3){
+                    else if(panos == 3){
                         rahat = rahat + 12;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 12 + '€';
                         empty(Montako);
@@ -149,17 +156,17 @@ function Voitot(){
             if(arvot2 == 3){
                 Montako = Montako + 1;
                 if(Montako == 4){
-                    if(panos = 1){
+                    if(panos == 1){
                         rahat = rahat + 5;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 5 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 2){
+                    else if(panos == 2){
                         rahat = rahat + 10;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 10 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 3){
+                    else if(panos == 3){
                         rahat = rahat + 15;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 15 + '€';
                         empty(Montako);
@@ -174,17 +181,17 @@ function Voitot(){
             if(arvot2 == 4){
                 Montako = Montako + 1;
                 if(Montako == 4){
-                    if(panos = 1){
+                    if(panos == 1){
                         rahat = rahat + 6;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 6 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 2){
+                    else if(panos == 2){
                         rahat = rahat + 12;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 12 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 3){
+                    else if(panos == 3){
                         rahat = rahat + 18;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 18 + '€';
                         empty(Montako);
@@ -199,34 +206,34 @@ function Voitot(){
             if(arvot2 == 5){
                 Montako = Montako + 1;
                 if(Montako == 4){
-                    if(panos = 1){
+                    if(panos == 1){
                         rahat = rahat + 10;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 10 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 2){
+                    else if(panos == 2){
                         rahat = rahat + 20;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 20 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 3){
+                    else if(panos == 3){
                         rahat = rahat + 30;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 30 + '€';
                         empty(Montako);
                     }   
                 }
                 else if(Montako == 3){
-                    if(panos = 1){
+                    if(panos == 1){
                         rahat = rahat + 5;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 5 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 2){
+                    else if(panos == 2){
                         rahat = rahat + 10;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 10 + '€';
                         empty(Montako);
                     }
-                    else if(panos = 3){
+                    else if(panos == 3){
                         rahat = rahat + 15;
                         document.getElementById('voitto').innerHTML = 'Voitit ' + 15 + '€';
                         empty(Montako);
@@ -273,6 +280,32 @@ function Randomnumero(){
     nelja = Arvot[3];
 }
 
+function Lukitustentarkastus(){
+    for(i=0; i<4; i++){
+        if(lukko1 == 1){
+            lukko1 = 0;
+            Lukittu = 0;
+            document.getElementById('valittu').innerHTML = '';
+        }
+        else if(lukko2 == 2){
+            lukko2 = 0;
+            Lukittu = 0;
+            document.getElementById('valittu1').innerHTML = '';
+        }
+        else if(lukko3 == 3){
+            lukko3 = 0;
+            Lukittu = 0;
+            document.getElementById('valittu2').innerHTML = '';
+        }
+        else if(lukko4 == 4){
+            lukko4 = 0;
+            Lukittu = 0;
+            document.getElementById('valittu3').innerHTML = '';
+            varmistus = 0;
+        }
+    }
+}
+
 function Arvojenvaihtaminen(){
     for(i=1; i<5; i++){
         if(lukko1 == i){
@@ -294,27 +327,51 @@ function Arvojenvaihtaminen(){
 }
 
 function Lukko1(){
-    lukko1 = 1;
-    Lukittu = 1;
-    document.getElementById('valittu').innerHTML = '•';
+    if(lukko1 == 0){
+        lukko1 = 1;
+        Lukittu = 1;
+        document.getElementById('valittu').innerHTML = '•';
+    } else {
+        lukko1 = 0;
+        Lukittu = 0;
+        document.getElementById('valittu').innerHTML = '';
+    }
  }
 
  function Lukko2(){
-    lukko2 = 2;
-    Lukittu = 1;
-    document.getElementById('valittu1').innerHTML = '•';
+    if(lukko2 == 0){
+        lukko2 = 2;
+        Lukittu = 1;
+        document.getElementById('valittu1').innerHTML = '•';
+    } else {
+        lukko2 = 0;
+        Lukittu = 0;
+        document.getElementById('valittu1').innerHTML = '';
+    }
  }
 
  function Lukko3(){
-    lukko3 = 3;
-    Lukittu = 1;
-    document.getElementById('valittu2').innerHTML = '•';
+    if(lukko3 == 0){
+        lukko3 = 3;
+        Lukittu = 1;
+        document.getElementById('valittu2').innerHTML = '•';
+    } else {
+        lukko3 = 0;
+        Lukittu = 0;
+        document.getElementById('valittu2').innerHTML = '';
+    }
  }
 
  function Lukko4(){
-    lukko4 = 4;
-    Lukittu = 1;
-    document.getElementById('valittu3').innerHTML = '•';
+    if(lukko4 == 0){
+        lukko4 = 4;
+        Lukittu = 1;
+        document.getElementById('valittu3').innerHTML = '•';
+    } else {
+        lukko4 = 0;
+        Lukittu = 0;
+        document.getElementById('valittu3').innerHTML = '';
+    }
  }
 
 function KuvanVaihtoLukitus(){
